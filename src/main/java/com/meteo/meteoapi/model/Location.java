@@ -1,10 +1,8 @@
 package com.meteo.meteoapi.model;
 
 import lombok.Data;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity(name = "location")
 @Data
@@ -13,7 +11,15 @@ public class Location {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    String city;
+    @Column(name = "city")
+    private String city;
 
-    String countryCode;
+    @Column(name = "country")
+    private String country;
+
+    @Column(name = "lat")
+    private Double lat;
+
+    @Column(name = "lon")
+    private Double lon;
 }
