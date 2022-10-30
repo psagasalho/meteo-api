@@ -72,11 +72,10 @@ public class MeteoController {
         }
 
         List<Location> findById = meteoRepository.findAllById(id);
-        Map<String, Object> forecastAPI = null;
         if (!findById.isEmpty()){
-            forecastAPI = openWeatherAPI.fetchForecastByCoordinates(findById.get(0).getLat(), findById.get(0).getLon());
+            return openWeatherAPI.fetchForecastByCoordinates(findById.get(0).getLat(), findById.get(0).getLon());
         }
 
-        return forecastAPI;
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Forecast Not Found!");
     }
 }
