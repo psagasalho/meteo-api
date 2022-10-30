@@ -14,7 +14,8 @@ It uses the OpenWeather API to obtain the forecast information for the next 5 da
 
 ### How to run ?
 
-At the root folder of the meteo-api project run:
+In the first run, put the token in the environment variable "openweather.token" of the docker-compose.yml at the root folder of the meteo-api.
+After run:
 
 **docker-compose up**
 

@@ -15,6 +15,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=meteo
       - SPRING_DATASOURCE_PASSWORD=challenge
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - openweather.token=
 
   dbmeteo:
     image: 'postgres:13.1-alpine'
