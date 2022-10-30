@@ -3,6 +3,15 @@ The Meteo API is a API that allows you to register a city and display a weather 
 It uses the OpenWeather API to obtain the forecast information for the next 5 days with data every 3 hours.
 # Getting Started
 
+### Infrastructure Architecture
+
+![alt text](https://raw.githubusercontent.com/psagasalho/meteo-api/master/docs/infra_meteo_api.png)
+
+### Class Diagram
+
+![alt text](https://raw.githubusercontent.com/psagasalho/meteo-api/master/docs/class_diagram.png)
+
+
 ### How to run ?
 
 At the root folder of the meteo-api project run:
