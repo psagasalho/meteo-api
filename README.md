@@ -1,11 +1,23 @@
 # Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'com.meteo.meteo-api' is invalid and this project uses 'com.meteo.meteoapi' instead.
-
+The Meteo API is a API that allows you to register a city and display a weather forecast.
+It uses the OpenWeather API to obtain the forecast information for the next 5 days with data every 3 hours.
 # Getting Started
 
-### Reference Documentation
+### How to run ?
+
+At the root folder of the meteo-api project run:
+
+**docker-compose up**
+
+The API will be exposed at the port **8084**
+
+### How to Use?
+
+
+
+
+
+# Reference Documentation
 For further reference, please consider the following sections:
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
