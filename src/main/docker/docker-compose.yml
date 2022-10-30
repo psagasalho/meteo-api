@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  meteoAPI:
+    image: 'docker-spring-boot-postgres:latest'
+    build:
+      context: .
+    container_name: meteoAPI
+    depends_on:
+      - dbmeteo
+    ports:
+      - 8084:8084
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://dbmeteo:5432/meteo
+      - SPRING_DATASOURCE_USERNAME=meteo
+      - SPRING_DATASOURCE_PASSWORD=challenge
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+  dbmeteo:
+    image: 'postgres:13.1-alpine'
+    container_name: dbmeteo
+    environment:
+      - POSTGRES_USER=meteo
+      - POSTGRES_PASSWORD=challenge
