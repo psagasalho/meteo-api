@@ -22,8 +22,7 @@ The API will be exposed at the port **8084**
 
 ### How to Use?
 
-
-
+[API Endpoints](https://htmlpreview.github.io/?https://github.com/psagasalho/meteo-api/blob/master/docs/index.html)
 
 
 # Reference Documentation
